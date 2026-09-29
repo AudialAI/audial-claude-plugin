@@ -17,9 +17,9 @@ Report the `output_dir` and file names back to the user after every job.
 | drum hits, loops, sample pack | `generate_samples` | |
 | audio → MIDI | `generate_midi` | |
 | write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields |
-| synth patch from a sample | `sound2vital` | one-shot ≤ 20 s; needs subscription |
-| sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio); needs subscription |
+| synth patch from a sample | `sound2vital` | one-shot ≤ 20 s |
+| sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio) |
 | "where did that go", earlier outputs | `list_results` | |
 
-Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
+Every tool except `list_results` requires an active Audial subscription. Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
 subscription or credentials message, relay it verbatim and stop.

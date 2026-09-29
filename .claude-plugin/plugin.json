@@ -1,7 +1,7 @@
 {
   "name": "audial",
   "displayName": "Audial",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stem splitting, mastering, audio-to-MIDI, music generation, resynthesis and vocal synthesis with Audial's hosted engines.",
   "author": { "name": "Audial", "email": "contact@audialmusic.ai", "url": "https://audialmusic.ai" },
   "homepage": "https://audialmusic.ai/resources/api-reference",

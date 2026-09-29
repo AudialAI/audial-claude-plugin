@@ -19,7 +19,7 @@ audialmusic.ai) and a results folder (defaults to `~/Audial`).
 ## Requirements
 
 - `uv`/`uvx` available on your `PATH` (the plugin runs `uvx audial-mcp`).
-- An Audial account; some tools (`sound2vital`, `text2vox`) require an active subscription.
+- An Audial account with an active subscription (every tool except `list_results` calls the Audial API, which requires one).
 
 ## What it adds
 
