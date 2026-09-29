@@ -1,0 +1,7 @@
+{
+  "name": "audial",
+  "owner": { "name": "Audial" },
+  "plugins": [
+    { "name": "audial", "source": "./", "description": "Audial audio tools as MCP tools" }
+  ]
+}
