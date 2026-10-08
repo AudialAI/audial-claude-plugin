@@ -1,16 +1,40 @@
 {
   "name": "audial",
   "displayName": "Audial",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Stem splitting, mastering, audio-to-MIDI, music generation, resynthesis and vocal synthesis with Audial's hosted engines.",
-  "author": { "name": "Audial", "email": "contact@audialmusic.ai", "url": "https://audialmusic.ai" },
+  "author": {
+    "name": "Audial",
+    "email": "contact@audialmusic.ai",
+    "url": "https://audialmusic.ai"
+  },
   "homepage": "https://audialmusic.ai/resources/api-reference",
   "repository": "https://github.com/AudialAI/audial-claude-plugin",
   "license": "MIT",
-  "keywords": ["audio", "music", "stems", "mastering", "midi"],
+  "keywords": [
+    "audio",
+    "music",
+    "stems",
+    "mastering",
+    "midi"
+  ],
   "userConfig": {
-    "user_id": { "type": "string", "title": "Audial user id", "description": "From your dashboard at audialmusic.ai", "required": true },
-    "api_key": { "type": "string", "title": "Audial API key", "description": "From your dashboard at audialmusic.ai", "sensitive": true, "required": true },
-    "results_dir": { "type": "directory", "title": "Results folder", "description": "Where Audial writes stems, masters, MIDI and generated audio", "default": "~/Audial" }
+    "user_id": {
+      "type": "string",
+      "title": "Audial user id (optional)",
+      "description": "Leave empty. Only needed with an older API key that does not start with aud_."
+    },
+    "api_key": {
+      "type": "string",
+      "title": "Audial API key (optional)",
+      "description": "Leave empty to sign in through your browser the first time you use Audial.",
+      "sensitive": true
+    },
+    "results_dir": {
+      "type": "directory",
+      "title": "Results folder",
+      "description": "Where Audial writes stems, masters, MIDI and generated audio",
+      "default": "~/Audial"
+    }
   }
 }
