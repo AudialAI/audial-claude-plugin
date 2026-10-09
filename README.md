@@ -1,6 +1,6 @@
 # Audial
 
-Audial is a Claude Code plugin that brings Audial's hosted audio tools into Claude as MCP tools and a routing skill. It gives Claude the ability to split stems, analyze tempo/key/loudness, segment a song's arrangement, master a mix, generate sample packs, convert audio to MIDI, generate or remix music, turn a one-shot sample into a synth preset, and sing lyrics in a reference voice, all powered by the Audial music model running on Audial's servers.
+[Audial](https://audialmusic.ai) is a Claude Code plugin that brings Audial's hosted audio tools into Claude as MCP tools and a routing skill. It gives Claude the ability to split stems, analyze tempo/key/loudness, segment a song's arrangement, master a mix, generate sample packs, convert audio to MIDI, generate or remix music, turn a one-shot sample into a synth preset, and sing lyrics in a reference voice, all powered by the Audial music model running on Audial's servers. Grab the companion plugins from the [downloads page](https://audialmusic.ai/downloads).
 
 Audio and text you pass to a tool are uploaded to Audial's API (https://api.audialmusic.ai) over HTTPS and processed on Audial's servers; results are downloaded into your results folder. Some tools require an active Audial subscription.
 
@@ -27,3 +27,7 @@ audialmusic.ai) and a results folder (defaults to `~/Audial`).
   music generation, resynthesis, vocal synthesis, and job listing).
 - An `audial` skill that routes requests to the right tool and reports back where results
   were written.
+
+---
+
+Powered by [Audial](https://audialmusic.ai).
