@@ -11,6 +11,10 @@
   },
   "homepage": "https://audialmusic.ai/resources/api-reference",
   "repository": "https://github.com/AudialAI/audial-claude-plugin",
+  "documentationUrl": "https://www.audialmusic.ai/integrations/mcp-server",
+  "supportUrl": "https://www.audialmusic.ai/resources/support",
+  "privacyPolicyUrl": "https://www.audialmusic.ai/legal/privacy",
+  "termsOfServiceUrl": "https://www.audialmusic.ai/legal/terms",
   "license": "MIT",
   "keywords": [
     "audio",
