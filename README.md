@@ -13,8 +13,10 @@ claude plugin marketplace add AudialAI/audial-claude-plugin
 claude plugin install audial@audial
 ```
 
-You will be prompted for your Audial user id and API key (from your dashboard at
-audialmusic.ai) and a results folder (defaults to `~/Audial`).
+You will be asked for a results folder (defaults to `~/Audial`). Leave the user id and API
+key fields empty: the first time you use an Audial tool, a sign-in page opens in your browser,
+and once you approve it the tool carries on. Each connected computer is listed, and can be
+disconnected, under Apps & API Keys in your profile at audialmusic.ai.
 
 ## Requirements
 
