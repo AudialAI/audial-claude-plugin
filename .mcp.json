@@ -2,7 +2,7 @@
   "mcpServers": {
     "audial": {
       "command": "uvx",
-      "args": ["audial-mcp==0.2.0"],
+      "args": ["audial-mcp==0.2.1"],
       "env": {
         "AUDIAL_USER_ID": "${user_config.user_id}",
         "AUDIAL_API_KEY": "${user_config.api_key}",
