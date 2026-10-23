@@ -1,7 +1,7 @@
 {
   "name": "audial",
   "displayName": "Audial",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Stem splitting, mastering, audio-to-MIDI, music generation, resynthesis and vocal synthesis with Audial's hosted engines.",
   "icon": ".claude-plugin/icon.png",
   "author": {
@@ -26,16 +26,14 @@
   "userConfig": {
     "user_id": {
       "type": "string",
-      "title": "Audial user id",
-      "description": "From your dashboard at audialmusic.ai",
-      "required": true
+      "title": "Audial user id (optional)",
+      "description": "Leave empty. Only needed with an older API key that does not start with aud_."
     },
     "api_key": {
       "type": "string",
-      "title": "Audial API key",
-      "description": "From your dashboard at audialmusic.ai",
-      "sensitive": true,
-      "required": true
+      "title": "Audial API key (optional)",
+      "description": "Leave empty to sign in through your browser the first time you use Audial.",
+      "sensitive": true
     },
     "results_dir": {
       "type": "directory",

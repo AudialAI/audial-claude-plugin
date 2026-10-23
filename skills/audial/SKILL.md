@@ -23,3 +23,5 @@ Report the `output_dir` and file names back to the user after every job.
 
 Every tool except `list_results` requires an active Audial subscription. Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
 subscription or credentials message, relay it verbatim and stop.
+
+No API key is needed. If the user is not signed in, the first tool call opens a sign-in page in their browser and continues once they approve. If a tool returns a sign-in link instead, give the user the link and the code, and run the tool again when they say they have approved it. `account` shows who is signed in; `sign_in` and `sign_out` change it.
