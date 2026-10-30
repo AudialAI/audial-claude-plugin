@@ -24,7 +24,7 @@ Report the `output_dir` and file names back to the user after every job.
 
 `sound2vital` and `sound2serum` model one isolated sound: a single note, chord stab or hit, ideally 1-4 seconds and dry, 20 seconds at most. A loop, melody or drum pattern gives a poor preset even under 20 seconds, so if the file looks like one (a tempo or "loop" in its name is a clue), say so before running it and suggest trimming it to one note. If a result's `summary` says the match is weak, or the user says it sounds wrong, check whether the input was a single sound before anything else.
 
-Every tool except `list_results` requires an active Audial subscription. Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
+Every job counts as one run except `analyze`, and a failed run does not count. Accounts without a subscription get a small free allowance, then need a subscription. Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
 subscription or credentials message, relay it verbatim and stop.
 
 No API key is needed. If the user is not signed in, the first tool call opens a sign-in page in their browser and continues once they approve. If a tool returns a sign-in link instead, give the user the link and the code, and run the tool again when they say they have approved it. `account` shows who is signed in; `sign_in` and `sign_out` change it.
