@@ -1,7 +1,7 @@
 {
   "name": "audial",
   "owner": { "name": "Audial" },
-  "description": "Audial audio tools as MCP tools: stem splitting, mastering, audio-to-MIDI, music generation, resynthesis and vocal synthesis.",
+  "description": "Audial audio tools as MCP tools: stem splitting, mastering, audio-to-MIDI, music generation, resynthesis to Vital or Serum 2 presets, and vocal synthesis.",
   "plugins": [
     { "name": "audial", "source": "./", "description": "Audial audio tools as MCP tools" }
   ]

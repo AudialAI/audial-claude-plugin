@@ -1,6 +1,6 @@
 ---
 name: audial
-description: Use when the user wants to split stems, analyze or master audio, make a sample pack, convert audio to MIDI, generate music, turn a one-shot into a synth preset, or sing lyrics in a reference voice. Routes each request to the right Audial MCP tool and explains results.
+description: Use when the user wants to split stems, analyze or master audio, make a sample pack, convert audio to MIDI, generate music, turn a one-shot into a Vital or Serum 2 synth preset, or sing lyrics in a reference voice. Routes each request to the right Audial MCP tool and explains results.
 ---
 
 # Audial tools
@@ -17,7 +17,8 @@ Report the `output_dir` and file names back to the user after every job.
 | drum hits, loops, sample pack | `generate_samples` | |
 | audio → MIDI | `generate_midi` | |
 | write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields |
-| synth patch from a sample | `sound2vital` | one-shot ≤ 20 s |
+| synth patch from a sample | `sound2vital` | default; one-shot ≤ 20 s; free Audial Synth plugin |
+| Serum / Serum 2 preset from a sample | `sound2serum` | one-shot ≤ 20 s; opens in Xfer Serum 2, no plugin needed |
 | sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio) |
 | "where did that go", earlier outputs | `list_results` | |
 
