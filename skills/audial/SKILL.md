@@ -17,10 +17,12 @@ Report the `output_dir` and file names back to the user after every job.
 | drum hits, loops, sample pack | `generate_samples` | |
 | audio → MIDI | `generate_midi` | |
 | write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields |
-| synth patch from a sample | `sound2vital` | default; one-shot ≤ 20 s; free Audial Synth plugin |
-| Serum / Serum 2 preset from a sample | `sound2serum` | one-shot ≤ 20 s; opens in Xfer Serum 2, no plugin needed |
+| synth patch from a sample | `sound2vital` | default; one isolated sound, not a loop; free Audial Synth plugin |
+| Serum / Serum 2 preset from a sample | `sound2serum` | one isolated sound, not a loop; opens in Xfer Serum 2, no plugin needed |
 | sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio) |
 | "where did that go", earlier outputs | `list_results` | |
+
+`sound2vital` and `sound2serum` model one isolated sound: a single note, chord stab or hit, ideally 1-4 seconds and dry, 20 seconds at most. A loop, melody or drum pattern gives a poor preset even under 20 seconds, so if the file looks like one (a tempo or "loop" in its name is a clue), say so before running it and suggest trimming it to one note. If a result's `summary` says the match is weak, or the user says it sounds wrong, check whether the input was a single sound before anything else.
 
 Every tool except `list_results` requires an active Audial subscription. Jobs run remotely and take seconds to minutes; progress is reported. If a tool returns a
 subscription or credentials message, relay it verbatim and stop.

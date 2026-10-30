@@ -1,7 +1,7 @@
 {
   "name": "audial",
   "displayName": "Audial",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Stem splitting, mastering, audio-to-MIDI, music generation, resynthesis to Vital or Serum 2 presets, and vocal synthesis with Audial's hosted engines.",
   "icon": ".claude-plugin/icon.png",
   "author": {
