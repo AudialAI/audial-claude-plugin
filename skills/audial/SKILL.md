@@ -14,7 +14,7 @@ Report the `output_dir` and file names back to the user after every job.
 | a quick tempo or key reading | `analyze` | fastest; answer from `metadata` |
 | song sections, arrangement, bars | `segment` | fast (about half a minute); keep the `analysis_id` it returns |
 | energy, danceability, loudness, mode, key | `audio_features` | song and each section |
-| genre, mood, instruments | `tag_audio` | |
+| genre, mood, instruments, a written description of the track | `tag_audio` | |
 | lyrics, the words of a song, a transcription of the vocals | `get_lyrics` | timed lines |
 | louder/polished mix, "master this" | `master` | pass a reference track if they name one |
 | drum hits, loops, sample pack | `generate_samples` | |
