@@ -22,7 +22,7 @@ Report the `output_dir` and file names back to the user after every job.
 | write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields |
 | synth patch from a sample | `sound2vital` | default; one isolated sound, not a loop; free Audial Synth plugin |
 | Serum / Serum 2 preset from a sample | `sound2serum` | one isolated sound, not a loop; opens in Xfer Serum 2, no plugin needed |
-| sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio) |
+| sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio); a MIDI must be one note at a time: a single melody line, not chords or harmony |
 | "where did that go", earlier outputs | `list_results` | |
 
 `segment` returns an `analysis_id`. When the user then asks for features, tags, lyrics or a sample pack of the same track, pass that `analysis_id` to `audio_features`, `tag_audio`, `get_lyrics` or `generate_samples`: nothing is uploaded again and it does not count as another run. Without one, those tools take the file and run `segment` first. Tags, lyrics and sample packs need the track's stems, which Audial makes after each analysis, so right after a new one they wait a few minutes; say so if the user is waiting. If one of them fails or times out after analysing a file, its error gives the new `analysis_id`: retry with that, not with the file.
