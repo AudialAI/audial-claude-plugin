@@ -19,7 +19,7 @@ Report the `output_dir` and file names back to the user after every job.
 | louder/polished mix, "master this" | `master` | pass a reference track if they name one |
 | drum hits, loops, sample pack | `generate_samples` | |
 | audio → MIDI, the notes of a part | `generate_midi` | |
-| write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields |
+| write/generate a song, cover, remix, extend | `generate_music` | tempo/key words in the prompt beat the numeric fields; with no lyrics Audial writes them (show them to the user so they can edit and run again); `instrumental=true` for no vocals |
 | synth patch from a sample | `sound2vital` | default; one isolated sound, not a loop; free Audial Synth plugin |
 | Serum / Serum 2 preset from a sample | `sound2serum` | one isolated sound, not a loop; opens in Xfer Serum 2, no plugin needed |
 | sing these lyrics in this voice | `text2vox` | needs reference clip and a melody (MIDI or audio); a MIDI must be one note at a time: a single melody line, not chords or harmony |
